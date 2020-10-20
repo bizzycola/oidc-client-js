@@ -38,7 +38,7 @@ function build_lib_sourcemap(){
     entry: npmEntry,
     output: {
         filename:'oidc-client.js',
-        libraryTarget:'umd',
+        libraryTarget:'esm',
         // Workaround for https://github.com/webpack/webpack/issues/6642
         globalObject: 'this'
     },
@@ -56,7 +56,7 @@ function build_lib_rsa_sourcemap(){
     entry: npmEntry,
     output: {
         filename:'oidc-client.rsa256.js',
-        libraryTarget:'umd',
+        libraryTarget:'esm',
         // Workaround for https://github.com/webpack/webpack/issues/6642
         globalObject: 'this'
     },
@@ -74,7 +74,7 @@ function build_lib_min(){
     entry: npmEntry,
     output: {
         filename:'oidc-client.min.js',
-        libraryTarget:'umd',
+        libraryTarget:'esm',
         // Workaround for https://github.com/webpack/webpack/issues/6642
         globalObject: 'this'
     },
@@ -93,7 +93,7 @@ function build_lib_rsa_min(){
     entry: npmEntry,
     output: {
         filename:'oidc-client.rsa256.min.js',
-        libraryTarget:'umd',
+        libraryTarget:'esm',
         // Workaround for https://github.com/webpack/webpack/issues/6642
         globalObject: 'this'
     },
